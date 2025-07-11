@@ -1,0 +1,4 @@
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\images\Logo.svg
+wwwroot\images\SplashScreen.svg

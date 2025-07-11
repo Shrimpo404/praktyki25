@@ -1,0 +1,13 @@
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\bin\Debug\net8.0\DXApplication.Module.deps.json
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\bin\Debug\net8.0\DXApplication.Module.dll
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\bin\Debug\net8.0\DXApplication.Module.pdb
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.csproj.AssemblyReference.cache
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.AssemblyInfoInputs.cache
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.AssemblyInfo.cs
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.csproj.CoreCompileInputs.cache
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.sourcelink.json
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.dll
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\refint\DXApplication.Module.dll
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\DXApplication.Module.pdb
+C:\Users\tojab\source\repos\DXApplication\DXApplication.Module\obj\Debug\net8.0\ref\DXApplication.Module.dll
