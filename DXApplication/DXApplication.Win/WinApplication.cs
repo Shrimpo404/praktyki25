@@ -4,11 +4,7 @@ using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Win;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Win.Utils;
-using Microsoft.EntityFrameworkCore;
-using DevExpress.ExpressApp.EFCore;
-using DXApplication.Module;
-using DXApplication.Module.BusinessObjects;
-using System.Data.Common;
+using DevExpress.ExpressApp.Xpo;
 
 namespace DXApplication.Win;
 

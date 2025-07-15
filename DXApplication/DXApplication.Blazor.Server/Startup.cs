@@ -4,7 +4,7 @@ using DevExpress.ExpressApp.Blazor.Services;
 using DevExpress.Persistent.Base;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Server.Circuits;
-using Microsoft.EntityFrameworkCore;
+using DevExpress.ExpressApp.Xpo;
 using DXApplication.Blazor.Server.Services;
 
 namespace DXApplication.Blazor.Server;
@@ -28,34 +28,24 @@ public class Startup {
         services.AddXaf(Configuration, builder => {
             builder.UseApplication<DXApplicationBlazorApplication>();
             builder.Modules
-                .AddConditionalAppearance()
-                .AddValidation(options => {
-                    options.AllowValidationDetailsAccess = false;
-                })
                 .Add<DXApplication.Module.DXApplicationModule>()
                 .Add<DXApplicationBlazorModule>();
             builder.ObjectSpaceProviders
-                .AddEFCore(options => options.PreFetchReferenceProperties())
-                    .WithDbContext<DXApplication.Module.BusinessObjects.DXApplicationEFCoreDbContext>((serviceProvider, options) => {
-                        // Uncomment this code to use an in-memory database. This database is recreated each time the server starts. With the in-memory database, you don't need to make a migration when the data model is changed.
-                        // Do not use this code in production environment to avoid data loss.
-                        // We recommend that you refer to the following help topic before you use an in-memory database: https://docs.microsoft.com/en-us/ef/core/testing/in-memory
-                        //options.UseInMemoryDatabase("InMemory");
-                        string connectionString = null;
-                        if(Configuration.GetConnectionString("ConnectionString") != null) {
-                            connectionString = Configuration.GetConnectionString("ConnectionString");
-                        }
+                .AddXpo((serviceProvider, options) => {
+                    string connectionString = null;
+                    if(Configuration.GetConnectionString("ConnectionString") != null) {
+                        connectionString = Configuration.GetConnectionString("ConnectionString");
+                    }
 #if EASYTEST
-                        if(Configuration.GetConnectionString("EasyTestConnectionString") != null) {
-                            connectionString = Configuration.GetConnectionString("EasyTestConnectionString");
-                        }
+                    if(Configuration.GetConnectionString("EasyTestConnectionString") != null) {
+                        connectionString = Configuration.GetConnectionString("EasyTestConnectionString");
+                    }
 #endif
-                        ArgumentNullException.ThrowIfNull(connectionString);
-                        options.UseSqlServer(connectionString);
-                        options.UseChangeTrackingProxies();
-                        options.UseObjectSpaceLinkProxies();
-                        options.UseLazyLoadingProxies();
-                    })
+                    ArgumentNullException.ThrowIfNull(connectionString);
+                    options.ConnectionString = connectionString;
+                    options.ThreadSafe = true;
+                    options.UseSharedDataStoreProvider = true;
+                })
                 .AddNonPersistent();
         });
     }

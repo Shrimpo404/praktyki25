@@ -2,9 +2,8 @@
 using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Blazor;
 using DevExpress.ExpressApp.SystemModule;
-using DXApplication.Module.BusinessObjects;
-using Microsoft.EntityFrameworkCore;
-using DevExpress.ExpressApp.EFCore;
+using DevExpress.ExpressApp.Xpo;
+using DXApplication.Blazor.Server.Services;
 
 namespace DXApplication.Blazor.Server;
 
@@ -28,7 +27,8 @@ public class DXApplicationBlazorApplication : BlazorApplication {
         e.Handled = true;
 #else
         if(System.Diagnostics.Debugger.IsAttached) {
-            e.Updater.Update();
+            //e.Updater.Update();
+            e.Updater.Dispose();
             e.Handled = true;
         }
         else {

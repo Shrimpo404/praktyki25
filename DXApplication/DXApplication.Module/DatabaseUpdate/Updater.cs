@@ -2,8 +2,9 @@
 using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
-using DevExpress.ExpressApp.EF;
-using DevExpress.Persistent.BaseImpl.EF;
+using DevExpress.Xpo;
+using DevExpress.ExpressApp.Xpo;
+using DevExpress.Persistent.BaseImpl;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DXApplication.Module.DatabaseUpdate;
@@ -16,9 +17,9 @@ public class Updater : ModuleUpdater {
     public override void UpdateDatabaseAfterUpdateSchema() {
         base.UpdateDatabaseAfterUpdateSchema();
         //string name = "MyName";
-        //EntityObject1 theObject = ObjectSpace.FirstOrDefault<EntityObject1>(u => u.Name == name);
+        //DomainObject1 theObject = ObjectSpace.FirstOrDefault<DomainObject1>(u => u.Name == name);
         //if(theObject == null) {
-        //    theObject = ObjectSpace.CreateObject<EntityObject1>();
+        //    theObject = ObjectSpace.CreateObject<DomainObject1>();
         //    theObject.Name = name;
         //}
 
@@ -26,5 +27,8 @@ public class Updater : ModuleUpdater {
     }
     public override void UpdateDatabaseBeforeUpdateSchema() {
         base.UpdateDatabaseBeforeUpdateSchema();
+        //if(CurrentDBVersion < new Version("1.1.0.0") && CurrentDBVersion > new Version("0.0.0.0")) {
+        //    RenameColumn("DomainObject1Table", "OldColumnName", "NewColumnName");
+        //}
     }
 }

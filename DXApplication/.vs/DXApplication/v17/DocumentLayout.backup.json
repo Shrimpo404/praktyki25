@@ -1,7 +1,40 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tojab\\source\\repos\\DXApplication\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0702886A-6DF5-6048-6032-B109A5A23398}|DXApplication.Module\\DXApplication.Module.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.module\\businessobjects\\mandant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0702886A-6DF5-6048-6032-B109A5A23398}|DXApplication.Module\\DXApplication.Module.csproj|solutionrelative:dxapplication.module\\businessobjects\\mandant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0702886A-6DF5-6048-6032-B109A5A23398}|DXApplication.Module\\DXApplication.Module.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0702886A-6DF5-6048-6032-B109A5A23398}|DXApplication.Module\\DXApplication.Module.csproj|solutionrelative:dxapplication.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\blazormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\blazormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\blazorapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\blazorapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|c:\\jakub\\github\\praktyki2025\\praktyki25\\dxapplication\\dxapplication.blazor.server\\dxapplication.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{74C9AED9-0459-9C2B-BC68-416E097B988E}|DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj|solutionrelative:dxapplication.blazor.server\\dxapplication.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\Module.cs",
+              "RelativeDocumentMoniker": "DXApplication.Module\\Module.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\Module.cs",
+              "RelativeToolTip": "DXApplication.Module\\Module.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABcAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:18:43.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mandant.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\BusinessObjects\\Mandant.cs",
+              "RelativeDocumentMoniker": "DXApplication.Module\\BusinessObjects\\Mandant.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\BusinessObjects\\Mandant.cs",
+              "RelativeToolTip": "DXApplication.Module\\BusinessObjects\\Mandant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:18:10.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\Program.cs",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\Program.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\Program.cs",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:17:31.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\Startup.cs",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\Startup.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\Startup.cs",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\Startup.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:17:29.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlazorModule.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\BlazorModule.cs",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\BlazorModule.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\BlazorModule.cs",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\BlazorModule.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:17:07.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlazorApplication.cs",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\BlazorApplication.cs",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\BlazorApplication.cs",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\BlazorApplication.cs",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\BlazorApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:16:45.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\appsettings.json",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\appsettings.json",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T18:15:54.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DXApplication.Blazor.Server",
+              "DocumentMoniker": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+              "RelativeDocumentMoniker": "DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+              "ToolTip": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+              "RelativeToolTip": "DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T18:15:09.534Z",
+              "EditorCaption": ""
             }
           ]
         }

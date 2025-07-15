@@ -12,29 +12,10 @@
           "DevExpress.Drawing.Skia": "24.2.8",
           "DevExpress.ExpressApp.Blazor": "24.2.8",
           "DevExpress.ExpressApp.CodeAnalysis": "24.2.8",
-          "DevExpress.ExpressApp.Validation.Blazor": "24.2.8"
+          "FirebirdSql.Data.FirebirdClient": "10.3.3"
         },
         "runtime": {
           "DXApplication.Blazor.Server.dll": {}
-        }
-      },
-      "aqua-core/5.4.0": {
-        "runtime": {
-          "lib/net8.0/Aqua.dll": {
-            "assemblyVersion": "5.4.0.0",
-            "fileVersion": "5.4.0.0"
-          }
-        }
-      },
-      "aqua-core-text-json/5.4.0": {
-        "dependencies": {
-          "aqua-core": "5.4.0"
-        },
-        "runtime": {
-          "lib/net6.0/Aqua.Text.Json.dll": {
-            "assemblyVersion": "5.4.0.0",
-            "fileVersion": "5.4.0.0"
-          }
         }
       },
       "Azure.Core/1.38.0": {
@@ -69,17 +50,6 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
-          }
-        }
-      },
-      "Castle.Core/5.1.1": {
-        "dependencies": {
-          "System.Diagnostics.EventLog": "8.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Castle.Core.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
           }
         }
       },
@@ -253,49 +223,6 @@
         }
       },
       "DevExpress.ExpressApp.CodeAnalysis/24.2.8": {},
-      "DevExpress.ExpressApp.ConditionalAppearance/24.2.8": {
-        "dependencies": {
-          "DevExpress.Data": "24.2.8",
-          "DevExpress.Drawing": "24.2.8",
-          "DevExpress.ExpressApp": "24.2.8",
-          "DevExpress.Persistent.Base": "24.2.8"
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.ConditionalAppearance.v24.2.dll": {
-            "assemblyVersion": "24.2.8.0",
-            "fileVersion": "24.2.8.0"
-          }
-        }
-      },
-      "DevExpress.ExpressApp.EFCore/24.2.8": {
-        "dependencies": {
-          "DevExpress.Data": "24.2.8",
-          "DevExpress.ExpressApp": "24.2.8",
-          "DevExpress.ExpressApp.Security": "24.2.8",
-          "DevExpress.Persistent.Base": "24.2.8",
-          "MessagePack": "2.5.187",
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Remote.Linq.EntityFrameworkCore": "7.1.0",
-          "Remote.Linq.Text.Json": "7.2.0",
-          "System.Diagnostics.EventLog": "8.0.1"
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.EntityFrameworkCore.Security.v24.2.dll": {
-            "assemblyVersion": "24.2.8.0",
-            "fileVersion": "24.2.8.0"
-          },
-          "lib/net8.0/DevExpress.ExpressApp.EFCore.v24.2.dll": {
-            "assemblyVersion": "24.2.8.0",
-            "fileVersion": "24.2.8.0"
-          }
-        }
-      },
       "DevExpress.ExpressApp.Objects/24.2.8": {
         "dependencies": {
           "DevExpress.Data": "24.2.8",
@@ -342,36 +269,18 @@
           }
         }
       },
-      "DevExpress.ExpressApp.Validation/24.2.8": {
+      "DevExpress.ExpressApp.Xpo/24.2.8": {
         "dependencies": {
           "DevExpress.Data": "24.2.8",
+          "DevExpress.Drawing": "24.2.8",
           "DevExpress.ExpressApp": "24.2.8",
-          "DevExpress.Persistent.Base": "24.2.8",
+          "DevExpress.Xpo": "24.2.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "System.Drawing.Common": "8.0.10"
+          "System.Drawing.Common": "8.0.10",
+          "System.Security.Permissions": "8.0.0"
         },
         "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.v24.2.dll": {
-            "assemblyVersion": "24.2.8.0",
-            "fileVersion": "24.2.8.0"
-          }
-        }
-      },
-      "DevExpress.ExpressApp.Validation.Blazor/24.2.8": {
-        "dependencies": {
-          "DevExpress.Data": "24.2.8",
-          "DevExpress.ExpressApp": "24.2.8",
-          "DevExpress.ExpressApp.Blazor": "24.2.8",
-          "DevExpress.ExpressApp.Validation": "24.2.8",
-          "DevExpress.Persistent.Base": "24.2.8",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.Blazor.v24.2.dll": {
+          "lib/net8.0/DevExpress.ExpressApp.Xpo.v24.2.dll": {
             "assemblyVersion": "24.2.8.0",
             "fileVersion": "24.2.8.0"
           }
@@ -450,23 +359,20 @@
           }
         }
       },
-      "DevExpress.Persistent.BaseImpl.EFCore/24.2.8": {
+      "DevExpress.Persistent.BaseImpl.Xpo/24.2.8": {
         "dependencies": {
           "DevExpress.Data": "24.2.8",
           "DevExpress.Drawing": "24.2.8",
           "DevExpress.ExpressApp": "24.2.8",
-          "DevExpress.ExpressApp.EFCore": "24.2.8",
+          "DevExpress.ExpressApp.Objects": "24.2.8",
+          "DevExpress.ExpressApp.Xpo": "24.2.8",
           "DevExpress.Persistent.Base": "24.2.8",
           "DevExpress.Scheduler.Core": "24.2.8",
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "System.Configuration.ConfigurationManager": "8.0.1",
-          "System.Diagnostics.EventLog": "8.0.1"
+          "DevExpress.Xpo": "24.2.8",
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Persistent.BaseImpl.EFCore.v24.2.dll": {
+          "lib/net8.0/DevExpress.Persistent.BaseImpl.Xpo.v24.2.dll": {
             "assemblyVersion": "24.2.8.0",
             "fileVersion": "24.2.8.0"
           }
@@ -538,6 +444,14 @@
           "lib/net8.0/DevExtreme.AspNet.Data.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "FirebirdSql.Data.FirebirdClient/10.3.3": {
+        "runtime": {
+          "lib/net8.0/FirebirdSql.Data.FirebirdClient.dll": {
+            "assemblyVersion": "10.3.3.0",
+            "fileVersion": "10.3.3.0"
           }
         }
       },
@@ -880,97 +794,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.11": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.11",
-          "Microsoft.Extensions.Caching.Memory": "8.0.1",
-          "Microsoft.Extensions.Logging": "8.0.1"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {},
-      "Microsoft.EntityFrameworkCore.InMemory/8.0.11": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Proxies/8.0.11": {
-        "dependencies": {
-          "Castle.Core": "5.1.1",
-          "Microsoft.EntityFrameworkCore": "8.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.11": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.SqlServer/8.0.11": {
-        "dependencies": {
-          "Microsoft.Data.SqlClient": "5.2.2",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
-          "System.Formats.Asn1": "8.0.1"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52104"
-          }
-        }
-      },
-      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Caching.Memory/8.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -1022,19 +845,6 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging/8.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.1",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.1024.46610"
           }
@@ -1301,41 +1111,6 @@
             "assetType": "runtime",
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53103"
-          }
-        }
-      },
-      "Remote.Linq/7.2.0": {
-        "dependencies": {
-          "aqua-core": "5.4.0"
-        },
-        "runtime": {
-          "lib/net8.0/Remote.Linq.dll": {
-            "assemblyVersion": "7.2.0.0",
-            "fileVersion": "7.2.0.0"
-          }
-        }
-      },
-      "Remote.Linq.EntityFrameworkCore/7.1.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Remote.Linq": "7.2.0"
-        },
-        "runtime": {
-          "lib/net6.0/Remote.Linq.EntityFrameworkCore.dll": {
-            "assemblyVersion": "7.1.0.0",
-            "fileVersion": "7.1.0.0"
-          }
-        }
-      },
-      "Remote.Linq.Text.Json/7.2.0": {
-        "dependencies": {
-          "Remote.Linq": "7.2.0",
-          "aqua-core-text-json": "5.4.0"
-        },
-        "runtime": {
-          "lib/net6.0/Remote.Linq.Text.Json.dll": {
-            "assemblyVersion": "7.2.0.0",
-            "fileVersion": "7.2.0.0"
           }
         }
       },
@@ -1912,21 +1687,15 @@
         "dependencies": {
           "DevExpress.ExpressApp": "24.2.8",
           "DevExpress.ExpressApp.CodeAnalysis": "24.2.8",
-          "DevExpress.ExpressApp.ConditionalAppearance": "24.2.8",
-          "DevExpress.ExpressApp.EFCore": "24.2.8",
-          "DevExpress.ExpressApp.Objects": "24.2.8",
-          "DevExpress.ExpressApp.Validation": "24.2.8",
+          "DevExpress.ExpressApp.Xpo": "24.2.8",
           "DevExpress.Persistent.Base": "24.2.8",
-          "DevExpress.Persistent.BaseImpl.EFCore": "24.2.8",
+          "DevExpress.Persistent.BaseImpl.Xpo": "24.2.8",
           "Microsoft.Data.SqlClient": "5.2.2",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
           "System.IdentityModel.Tokens.Jwt": "7.5.1"
         },
         "runtime": {
           "DXApplication.Module.dll": {
-            "assemblyVersion": "1.0.9323.23049",
+            "assemblyVersion": "1.0.9327.36586",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1938,20 +1707,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "aqua-core/5.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-MtehH4yWnaR/1efhzbk7AsJYLBUZaxixNqmNsYchLexJoonMHrgMUX+i0SmbEv+JqVOyum+M7szYazxq6epftQ==",
-      "path": "aqua-core/5.4.0",
-      "hashPath": "aqua-core.5.4.0.nupkg.sha512"
-    },
-    "aqua-core-text-json/5.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WFccaBPdo7ruefs907sz827wG70cQMR5bkDk1NaJgHqxhpj84VKD5Y0COsh9fxE5qvSDGCJ8utPJjb3cwjhhgg==",
-      "path": "aqua-core-text-json/5.4.0",
-      "hashPath": "aqua-core-text-json.5.4.0.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",
@@ -1966,13 +1721,6 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
-    },
-    "Castle.Core/5.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
-      "path": "castle.core/5.1.1",
-      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
     "DevExpress.Blazor/24.2.8": {
       "type": "package",
@@ -2058,20 +1806,6 @@
       "path": "devexpress.expressapp.codeanalysis/24.2.8",
       "hashPath": "devexpress.expressapp.codeanalysis.24.2.8.nupkg.sha512"
     },
-    "DevExpress.ExpressApp.ConditionalAppearance/24.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-M/auQc0NWxXAE7zCy0qzaGfjmGm+FLur/5g/owAV4qx/szrr+2BF2Wnxm9fjDlLvJmx18hcwMPwWw/grliyxhQ==",
-      "path": "devexpress.expressapp.conditionalappearance/24.2.8",
-      "hashPath": "devexpress.expressapp.conditionalappearance.24.2.8.nupkg.sha512"
-    },
-    "DevExpress.ExpressApp.EFCore/24.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BKZaGzq70PUhfJdLXWwx42orTy/fFNCe2SaaM6QMaT9zgoPlMf/qo9GiwTq38cLR8PgceP0TnvUG0xzRbQ+bUA==",
-      "path": "devexpress.expressapp.efcore/24.2.8",
-      "hashPath": "devexpress.expressapp.efcore.24.2.8.nupkg.sha512"
-    },
     "DevExpress.ExpressApp.Objects/24.2.8": {
       "type": "package",
       "serviceable": true,
@@ -2093,19 +1827,12 @@
       "path": "devexpress.expressapp.security.aspnetcore/24.2.8",
       "hashPath": "devexpress.expressapp.security.aspnetcore.24.2.8.nupkg.sha512"
     },
-    "DevExpress.ExpressApp.Validation/24.2.8": {
+    "DevExpress.ExpressApp.Xpo/24.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WsBYCp/Fhf/saELWBZx3ttm3gCCmTYb7TQKXArorWVvEUSgpAAA2s+gjNiLa/TpHgyOKp4fF2uEdaC5al425zw==",
-      "path": "devexpress.expressapp.validation/24.2.8",
-      "hashPath": "devexpress.expressapp.validation.24.2.8.nupkg.sha512"
-    },
-    "DevExpress.ExpressApp.Validation.Blazor/24.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oSF06zOCMpcNZq3NZ7LnFM7CzFiAcjowCeduV4N6+Q832q3KgVcjHowiHxQLplg72u7iJhssAtZ2CBICNVGUng==",
-      "path": "devexpress.expressapp.validation.blazor/24.2.8",
-      "hashPath": "devexpress.expressapp.validation.blazor.24.2.8.nupkg.sha512"
+      "sha512": "sha512-i720GUGuB68IOrHJReMZL2OvgbEWgpL59TbL5n57T2rcoMEa+xfo3kig/nQt8pE/DvLj/GWoThkHLGr1lun3cQ==",
+      "path": "devexpress.expressapp.xpo/24.2.8",
+      "hashPath": "devexpress.expressapp.xpo.24.2.8.nupkg.sha512"
     },
     "DevExpress.Images/24.2.8": {
       "type": "package",
@@ -2142,12 +1869,12 @@
       "path": "devexpress.persistent.base/24.2.8",
       "hashPath": "devexpress.persistent.base.24.2.8.nupkg.sha512"
     },
-    "DevExpress.Persistent.BaseImpl.EFCore/24.2.8": {
+    "DevExpress.Persistent.BaseImpl.Xpo/24.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ez7sYFz17igTCceDipPt5+/NiSWV9qjXDq6aJYhgC+/FMwO31ZiCjcI00Y9il1DvPzOZiEEHLHUEtnunyxUdUA==",
-      "path": "devexpress.persistent.baseimpl.efcore/24.2.8",
-      "hashPath": "devexpress.persistent.baseimpl.efcore.24.2.8.nupkg.sha512"
+      "sha512": "sha512-bcvwTdLzcXDOU+UbWGRZvwgYppqCiTzTNIjYudc9fx0XhWpD9LxGsJ0wUxxqaAMPdSj49mCaHMITAEt8gBPJ4Q==",
+      "path": "devexpress.persistent.baseimpl.xpo/24.2.8",
+      "hashPath": "devexpress.persistent.baseimpl.xpo.24.2.8.nupkg.sha512"
     },
     "DevExpress.Printing.Core/24.2.8": {
       "type": "package",
@@ -2183,6 +1910,13 @@
       "sha512": "sha512-Ts7jImYcdrWd9zarNJHRRT0jqTQPwqp8SnD5maUt2FuMfG+8IEMrUY4zkFNfPlNDj3grgC6f7HUX7GMempOCaQ==",
       "path": "devextreme.aspnet.data/5.0.0-beta",
       "hashPath": "devextreme.aspnet.data.5.0.0-beta.nupkg.sha512"
+    },
+    "FirebirdSql.Data.FirebirdClient/10.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iAj21eY5u7obZumA3NAVZf8ynu7Z6lslkU3V4W8Mm9Mowa4gcadT2a+LIMwAovDIg8iS8RpCSzIzFdKFCdakTg==",
+      "path": "firebirdsql.data.firebirdclient/10.3.3",
+      "hashPath": "firebirdsql.data.firebirdclient.10.3.3.nupkg.sha512"
     },
     "HarfBuzzSharp/7.3.0.1": {
       "type": "package",
@@ -2296,69 +2030,6 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-stbjWBTtpQ1HtqXMFyKnXFTr76PvaOHI2b2h85JqBi3eZr00nspvR/a90Zwh8CQ4rVawqLiTG0+0yZQWaav+sQ==",
-      "path": "microsoft.entityframeworkcore/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-++zY0Ea724ku1jptWJmF7jm3I4IXTexfT4qi1ETcSFFF7qj+qm6rRgN7mTuKkwIETuXk0ikfzudryRjUGrrNKQ==",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NI/AJQjtC7qgWM8Nr85sRkwlog2AnFer5RKP8xTUH0RuPF3nN0tGXBEeYJOLZWp+/+M/C6O7MMDRhKRE8bZwIA==",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gFFdubZlRfudSw94OxO7s8OvLQZncnR0S1ll//wRtZP3mMYVeq8DrMnEILK6hBJwbTBB1SNm3apg9SdvdE/ySg==",
-      "path": "microsoft.entityframeworkcore.inmemory/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Proxies/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hiNtDy1lQUNfYCgJP6p1yEiqoTlU/JDLUqLMwLC1PsO5fC4gs/06Lz6+Pl0ikZrTelIh0t96CZ2UyyBCzj3FTg==",
-      "path": "microsoft.entityframeworkcore.proxies/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.proxies.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3TuuW3i5I4Ro0yoaHmi2MqEDGObOVuhLaMEnd/heaLB1fcvm4fu4PevmC4BOWnI0vo176AIlV5o4rEQciLoohw==",
-      "path": "microsoft.entityframeworkcore.relational/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.relational.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.SqlServer/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rYYo8RyteIfRns+GuCcPRf3J7jS8gu8AxUWmFejrGoHTTKINhylL27N+SkFwCjxK4mscokjhQ1zjjJoNQ9oijA==",
-      "path": "microsoft.entityframeworkcore.sqlserver/8.0.11",
-      "hashPath": "microsoft.entityframeworkcore.sqlserver.8.0.11.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
-      "path": "microsoft.extensions.caching.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Caching.Memory/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HFDnhYLccngrzyGgHkjEDU5FMLn4MpOsr5ElgsBMC4yx6lJh4jeWO7fHS8+TXPq+dgxCmUa/Trl8svObmwW4QA==",
-      "path": "microsoft.extensions.caching.memory/8.0.1",
-      "hashPath": "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512"
-    },
     "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2400,13 +2071,6 @@
       "sha512": "sha512-nHwq9aPBdBPYXPti6wYEEfgXddfBrYC+CQLn+qISiwQq5tpfaqDZSKOJNxoe9rfQxGf1c+2wC/qWFe1QYJPYqw==",
       "path": "microsoft.extensions.hosting.abstractions/8.0.1",
       "hashPath": "microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
-      "path": "microsoft.extensions.logging/8.0.1",
-      "hashPath": "microsoft.extensions.logging.8.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
       "type": "package",
@@ -2568,27 +2232,6 @@
       "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
       "path": "microsoft.win32.systemevents/8.0.0",
       "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
-    },
-    "Remote.Linq/7.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BVwCLZWSTXjNADaqBVgV8Pt29iLHgprFz6eP4q0y2xpx1I8WWgJmt4V6s64FVLa1Ey4ToSE7b0XnKWRlo2lyyA==",
-      "path": "remote.linq/7.2.0",
-      "hashPath": "remote.linq.7.2.0.nupkg.sha512"
-    },
-    "Remote.Linq.EntityFrameworkCore/7.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-m50MtCkEZdBURDJjG7yPY8pf4n7NQANna13CX+jzE0nBh8Mfa4WHGmONaBOxIrZZ9z5PxceCbZoz/Cb3NLgiQg==",
-      "path": "remote.linq.entityframeworkcore/7.1.0",
-      "hashPath": "remote.linq.entityframeworkcore.7.1.0.nupkg.sha512"
-    },
-    "Remote.Linq.Text.Json/7.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YPimHPrY5bkLKTl7JQw15FFQVNzB6LhIOzjefaRWnPeVm9lwYmK3LWQr7L8gVzuSpusYBn8F9crg4w+91ODQrw==",
-      "path": "remote.linq.text.json/7.2.0",
-      "hashPath": "remote.linq.text.json.7.2.0.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

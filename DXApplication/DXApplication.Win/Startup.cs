@@ -5,8 +5,7 @@ using DevExpress.ExpressApp.Win.ApplicationBuilder;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Win;
 using DevExpress.Persistent.Base;
-using Microsoft.EntityFrameworkCore;
-using DevExpress.ExpressApp.EFCore;
+using DevExpress.Persistent.BaseImpl;
 using DevExpress.XtraEditors;
 using DevExpress.ExpressApp.Design;
 
@@ -23,23 +22,12 @@ public class ApplicationBuilder : IDesignTimeApplicationFactory {
 
         builder.UseApplication<DXApplicationWindowsFormsApplication>();
         builder.Modules
-            .AddConditionalAppearance()
-            .AddValidation(options => {
-                options.AllowValidationDetailsAccess = false;
-            })
             .Add<DXApplication.Module.DXApplicationModule>()
             .Add<DXApplicationWinModule>();
         builder.ObjectSpaceProviders
-            .AddEFCore(options => options.PreFetchReferenceProperties())
-                .WithDbContext<DXApplication.Module.BusinessObjects.DXApplicationEFCoreDbContext>((application, options) => {
-                    // Uncomment this code to use an in-memory database. This database is recreated each time the server starts. With the in-memory database, you don't need to make a migration when the data model is changed.
-                    // Do not use this code in production environment to avoid data loss.
-                    // We recommend that you refer to the following help topic before you use an in-memory database: https://docs.microsoft.com/en-us/ef/core/testing/in-memory
-                    //options.UseInMemoryDatabase("InMemory");
-                    options.UseSqlServer(connectionString);
-                    options.UseChangeTrackingProxies();
-                    options.UseObjectSpaceLinkProxies();
-                })
+            .AddXpo((application, options) => {
+                options.ConnectionString = connectionString;
+            })
             .AddNonPersistent();
         builder.AddBuildStep(application => {
             application.ConnectionString = connectionString;

@@ -8,7 +8,7 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
-using DevExpress.Persistent.BaseImpl.EF;
+using DevExpress.Persistent.BaseImpl;
 
 namespace DXApplication.Blazor.Server;
 

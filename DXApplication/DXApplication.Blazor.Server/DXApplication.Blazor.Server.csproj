@@ -20,7 +20,7 @@
     <PackageReference Include="DevExpress.Drawing.Skia" Version="24.2.8" />
     <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="24.2.8" />
     <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.2.8" />
-    <PackageReference Include="DevExpress.ExpressApp.Validation.Blazor" Version="24.2.8" />
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="10.3.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DXApplication.Module\DXApplication.Module.csproj" />

@@ -2,35 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "aqua-core/5.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Aqua.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Aqua.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "aqua-core-text-json/5.4.0": {
-        "type": "package",
-        "dependencies": {
-          "aqua-core": "5.4.0"
-        },
-        "compile": {
-          "lib/net6.0/Aqua.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Aqua.Text.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -72,22 +43,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Castle.Core/5.1.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Diagnostics.EventLog": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Castle.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Castle.Core.dll": {
             "related": ".xml"
           }
         }
@@ -329,61 +284,6 @@
       "DevExpress.ExpressApp.CodeAnalysis/24.2.8": {
         "type": "package"
       },
-      "DevExpress.ExpressApp.ConditionalAppearance/24.2.8": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.8]",
-          "DevExpress.Drawing": "[24.2.8]",
-          "DevExpress.ExpressApp": "[24.2.8]",
-          "DevExpress.Persistent.Base": "[24.2.8]"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.ExpressApp.ConditionalAppearance.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.ConditionalAppearance.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.ExpressApp.EFCore/24.2.8": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.8]",
-          "DevExpress.ExpressApp": "[24.2.8]",
-          "DevExpress.ExpressApp.Security": "[24.2.8]",
-          "DevExpress.Persistent.Base": "[24.2.8]",
-          "MessagePack": "2.5.187",
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Remote.Linq.EntityFrameworkCore": "7.1.0",
-          "Remote.Linq.Text.Json": "7.2.0",
-          "System.Diagnostics.EventLog": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.EntityFrameworkCore.Security.v24.2.dll": {
-            "related": ".xml"
-          },
-          "lib/net8.0/DevExpress.ExpressApp.EFCore.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.EntityFrameworkCore.Security.v24.2.dll": {
-            "related": ".xml"
-          },
-          "lib/net8.0/DevExpress.ExpressApp.EFCore.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "DevExpress.ExpressApp.Objects/24.2.8": {
         "type": "package",
         "dependencies": {
@@ -441,47 +341,24 @@
           "lib/net8.0/DevExpress.ExpressApp.Security.AspNetCore.v24.2.dll": {}
         }
       },
-      "DevExpress.ExpressApp.Validation/24.2.8": {
+      "DevExpress.ExpressApp.Xpo/24.2.8": {
         "type": "package",
         "dependencies": {
           "DevExpress.Data": "[24.2.8]",
+          "DevExpress.Drawing": "[24.2.8]",
           "DevExpress.ExpressApp": "[24.2.8]",
-          "DevExpress.Persistent.Base": "[24.2.8]",
+          "DevExpress.Xpo": "[24.2.8]",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "System.Drawing.Common": "8.0.10"
+          "System.Drawing.Common": "8.0.10",
+          "System.Security.Permissions": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.v24.2.dll": {
+          "lib/net8.0/DevExpress.ExpressApp.Xpo.v24.2.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.ExpressApp.Validation.Blazor/24.2.8": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.8]",
-          "DevExpress.ExpressApp": "[24.2.8]",
-          "DevExpress.ExpressApp.Blazor": "[24.2.8]",
-          "DevExpress.ExpressApp.Validation": "[24.2.8]",
-          "DevExpress.Persistent.Base": "[24.2.8]",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.Blazor.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.ExpressApp.Validation.Blazor.v24.2.dll": {
+          "lib/net8.0/DevExpress.ExpressApp.Xpo.v24.2.dll": {
             "related": ".xml"
           }
         }
@@ -580,29 +457,26 @@
           }
         }
       },
-      "DevExpress.Persistent.BaseImpl.EFCore/24.2.8": {
+      "DevExpress.Persistent.BaseImpl.Xpo/24.2.8": {
         "type": "package",
         "dependencies": {
           "DevExpress.Data": "[24.2.8]",
           "DevExpress.Drawing": "[24.2.8]",
           "DevExpress.ExpressApp": "[24.2.8]",
-          "DevExpress.ExpressApp.EFCore": "[24.2.8]",
+          "DevExpress.ExpressApp.Objects": "[24.2.8]",
+          "DevExpress.ExpressApp.Xpo": "[24.2.8]",
           "DevExpress.Persistent.Base": "[24.2.8]",
           "DevExpress.Scheduler.Core": "[24.2.8]",
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "System.Configuration.ConfigurationManager": "8.0.1",
-          "System.Diagnostics.EventLog": "8.0.1"
+          "DevExpress.Xpo": "[24.2.8]",
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Persistent.BaseImpl.EFCore.v24.2.dll": {
+          "lib/net8.0/DevExpress.Persistent.BaseImpl.Xpo.v24.2.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Persistent.BaseImpl.EFCore.v24.2.dll": {
+          "lib/net8.0/DevExpress.Persistent.BaseImpl.Xpo.v24.2.dll": {
             "related": ".xml"
           }
         }
@@ -699,6 +573,15 @@
           "lib/net8.0/DevExtreme.AspNet.Data.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebirdSql.Data.FirebirdClient/10.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FirebirdSql.Data.FirebirdClient.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/FirebirdSql.Data.FirebirdClient.dll": {}
         }
       },
       "HarfBuzzSharp/7.3.0.1": {
@@ -1104,160 +987,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.11",
-          "Microsoft.Extensions.Caching.Memory": "8.0.1",
-          "Microsoft.Extensions.Logging": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.InMemory/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.11"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Proxies/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "5.1.1",
-          "Microsoft.EntityFrameworkCore": "8.0.11"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.11",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.SqlServer/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Data.SqlClient": "5.1.6",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
-          "System.Formats.Asn1": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Caching.Memory/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1367,27 +1096,6 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Logging/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.1",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
         },
@@ -1768,56 +1476,6 @@
           "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
-          }
-        }
-      },
-      "Remote.Linq/7.2.0": {
-        "type": "package",
-        "dependencies": {
-          "aqua-core": "5.4.0"
-        },
-        "compile": {
-          "lib/net8.0/Remote.Linq.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Remote.Linq.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Remote.Linq.EntityFrameworkCore/7.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.10",
-          "Remote.Linq": "7.1.0"
-        },
-        "compile": {
-          "lib/net6.0/Remote.Linq.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Remote.Linq.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Remote.Linq.Text.Json/7.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Remote.Linq": "7.2.0",
-          "aqua-core-text-json": "5.4.0"
-        },
-        "compile": {
-          "lib/net6.0/Remote.Linq.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Remote.Linq.Text.Json.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -2699,16 +2357,10 @@
         "dependencies": {
           "DevExpress.ExpressApp": "24.2.8",
           "DevExpress.ExpressApp.CodeAnalysis": "24.2.8",
-          "DevExpress.ExpressApp.ConditionalAppearance": "24.2.8",
-          "DevExpress.ExpressApp.EFCore": "24.2.8",
-          "DevExpress.ExpressApp.Objects": "24.2.8",
-          "DevExpress.ExpressApp.Validation": "24.2.8",
+          "DevExpress.ExpressApp.Xpo": "24.2.8",
           "DevExpress.Persistent.Base": "24.2.8",
-          "DevExpress.Persistent.BaseImpl.EFCore": "24.2.8",
+          "DevExpress.Persistent.BaseImpl.Xpo": "24.2.8",
           "Microsoft.Data.SqlClient": "5.2.2",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.11",
-          "Microsoft.EntityFrameworkCore.Proxies": "8.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
           "System.IdentityModel.Tokens.Jwt": "7.5.1"
         },
         "compile": {
@@ -2721,44 +2373,6 @@
     }
   },
   "libraries": {
-    "aqua-core/5.4.0": {
-      "sha512": "MtehH4yWnaR/1efhzbk7AsJYLBUZaxixNqmNsYchLexJoonMHrgMUX+i0SmbEv+JqVOyum+M7szYazxq6epftQ==",
-      "type": "package",
-      "path": "aqua-core/5.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aqua-core.5.4.0.nupkg.sha512",
-        "aqua-core.nuspec",
-        "aqua-small.png",
-        "lib/net6.0/Aqua.dll",
-        "lib/net6.0/Aqua.xml",
-        "lib/net8.0/Aqua.dll",
-        "lib/net8.0/Aqua.xml",
-        "lib/netstandard2.0/Aqua.dll",
-        "lib/netstandard2.0/Aqua.xml",
-        "lib/netstandard2.1/Aqua.dll",
-        "lib/netstandard2.1/Aqua.xml",
-        "license.txt"
-      ]
-    },
-    "aqua-core-text-json/5.4.0": {
-      "sha512": "WFccaBPdo7ruefs907sz827wG70cQMR5bkDk1NaJgHqxhpj84VKD5Y0COsh9fxE5qvSDGCJ8utPJjb3cwjhhgg==",
-      "type": "package",
-      "path": "aqua-core-text-json/5.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aqua-core-text-json.5.4.0.nupkg.sha512",
-        "aqua-core-text-json.nuspec",
-        "aqua-small.png",
-        "lib/net6.0/Aqua.Text.Json.dll",
-        "lib/net6.0/Aqua.Text.Json.xml",
-        "lib/netstandard2.0/Aqua.Text.Json.dll",
-        "lib/netstandard2.0/Aqua.Text.Json.xml",
-        "license.txt"
-      ]
-    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -2795,30 +2409,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "Castle.Core/5.1.1": {
-      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
-      "type": "package",
-      "path": "castle.core/5.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ASL - Apache Software Foundation License.txt",
-        "CHANGELOG.md",
-        "LICENSE",
-        "castle-logo.png",
-        "castle.core.5.1.1.nupkg.sha512",
-        "castle.core.nuspec",
-        "lib/net462/Castle.Core.dll",
-        "lib/net462/Castle.Core.xml",
-        "lib/net6.0/Castle.Core.dll",
-        "lib/net6.0/Castle.Core.xml",
-        "lib/netstandard2.0/Castle.Core.dll",
-        "lib/netstandard2.0/Castle.Core.xml",
-        "lib/netstandard2.1/Castle.Core.dll",
-        "lib/netstandard2.1/Castle.Core.xml",
-        "readme.txt"
       ]
     },
     "DevExpress.Blazor/24.2.8": {
@@ -3266,36 +2856,6 @@
         "tools/uninstall.ps1"
       ]
     },
-    "DevExpress.ExpressApp.ConditionalAppearance/24.2.8": {
-      "sha512": "M/auQc0NWxXAE7zCy0qzaGfjmGm+FLur/5g/owAV4qx/szrr+2BF2Wnxm9fjDlLvJmx18hcwMPwWw/grliyxhQ==",
-      "type": "package",
-      "path": "devexpress.expressapp.conditionalappearance/24.2.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.expressapp.conditionalappearance.24.2.8.nupkg.sha512",
-        "devexpress.expressapp.conditionalappearance.nuspec",
-        "lib/net462/DevExpress.ExpressApp.ConditionalAppearance.v24.2.dll",
-        "lib/net462/DevExpress.ExpressApp.ConditionalAppearance.v24.2.xml",
-        "lib/net8.0/DevExpress.ExpressApp.ConditionalAppearance.v24.2.dll",
-        "lib/net8.0/DevExpress.ExpressApp.ConditionalAppearance.v24.2.xml"
-      ]
-    },
-    "DevExpress.ExpressApp.EFCore/24.2.8": {
-      "sha512": "BKZaGzq70PUhfJdLXWwx42orTy/fFNCe2SaaM6QMaT9zgoPlMf/qo9GiwTq38cLR8PgceP0TnvUG0xzRbQ+bUA==",
-      "type": "package",
-      "path": "devexpress.expressapp.efcore/24.2.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.expressapp.efcore.24.2.8.nupkg.sha512",
-        "devexpress.expressapp.efcore.nuspec",
-        "lib/net8.0/DevExpress.EntityFrameworkCore.Security.v24.2.dll",
-        "lib/net8.0/DevExpress.EntityFrameworkCore.Security.v24.2.xml",
-        "lib/net8.0/DevExpress.ExpressApp.EFCore.v24.2.dll",
-        "lib/net8.0/DevExpress.ExpressApp.EFCore.v24.2.xml"
-      ]
-    },
     "DevExpress.ExpressApp.Objects/24.2.8": {
       "sha512": "N5ZY70dEEDJAt1r282URykfb0CmiMxAX7kAXPf3gt+whhpURoHAO/3L/zOcXggBpY2m81RrewcDKw1KID4rYGw==",
       "type": "package",
@@ -3337,32 +2897,19 @@
         "lib/net8.0/DevExpress.ExpressApp.Security.AspNetCore.v24.2.dll"
       ]
     },
-    "DevExpress.ExpressApp.Validation/24.2.8": {
-      "sha512": "WsBYCp/Fhf/saELWBZx3ttm3gCCmTYb7TQKXArorWVvEUSgpAAA2s+gjNiLa/TpHgyOKp4fF2uEdaC5al425zw==",
+    "DevExpress.ExpressApp.Xpo/24.2.8": {
+      "sha512": "i720GUGuB68IOrHJReMZL2OvgbEWgpL59TbL5n57T2rcoMEa+xfo3kig/nQt8pE/DvLj/GWoThkHLGr1lun3cQ==",
       "type": "package",
-      "path": "devexpress.expressapp.validation/24.2.8",
+      "path": "devexpress.expressapp.xpo/24.2.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.expressapp.validation.24.2.8.nupkg.sha512",
-        "devexpress.expressapp.validation.nuspec",
-        "lib/net462/DevExpress.ExpressApp.Validation.v24.2.dll",
-        "lib/net462/DevExpress.ExpressApp.Validation.v24.2.xml",
-        "lib/net8.0/DevExpress.ExpressApp.Validation.v24.2.dll",
-        "lib/net8.0/DevExpress.ExpressApp.Validation.v24.2.xml"
-      ]
-    },
-    "DevExpress.ExpressApp.Validation.Blazor/24.2.8": {
-      "sha512": "oSF06zOCMpcNZq3NZ7LnFM7CzFiAcjowCeduV4N6+Q832q3KgVcjHowiHxQLplg72u7iJhssAtZ2CBICNVGUng==",
-      "type": "package",
-      "path": "devexpress.expressapp.validation.blazor/24.2.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.expressapp.validation.blazor.24.2.8.nupkg.sha512",
-        "devexpress.expressapp.validation.blazor.nuspec",
-        "lib/net8.0/DevExpress.ExpressApp.Validation.Blazor.v24.2.dll",
-        "lib/net8.0/DevExpress.ExpressApp.Validation.Blazor.v24.2.xml"
+        "devexpress.expressapp.xpo.24.2.8.nupkg.sha512",
+        "devexpress.expressapp.xpo.nuspec",
+        "lib/net462/DevExpress.ExpressApp.Xpo.v24.2.dll",
+        "lib/net462/DevExpress.ExpressApp.Xpo.v24.2.xml",
+        "lib/net8.0/DevExpress.ExpressApp.Xpo.v24.2.dll",
+        "lib/net8.0/DevExpress.ExpressApp.Xpo.v24.2.xml"
       ]
     },
     "DevExpress.Images/24.2.8": {
@@ -3438,17 +2985,19 @@
         "lib/net8.0/DevExpress.Persistent.Base.v24.2.xml"
       ]
     },
-    "DevExpress.Persistent.BaseImpl.EFCore/24.2.8": {
-      "sha512": "ez7sYFz17igTCceDipPt5+/NiSWV9qjXDq6aJYhgC+/FMwO31ZiCjcI00Y9il1DvPzOZiEEHLHUEtnunyxUdUA==",
+    "DevExpress.Persistent.BaseImpl.Xpo/24.2.8": {
+      "sha512": "bcvwTdLzcXDOU+UbWGRZvwgYppqCiTzTNIjYudc9fx0XhWpD9LxGsJ0wUxxqaAMPdSj49mCaHMITAEt8gBPJ4Q==",
       "type": "package",
-      "path": "devexpress.persistent.baseimpl.efcore/24.2.8",
+      "path": "devexpress.persistent.baseimpl.xpo/24.2.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.persistent.baseimpl.efcore.24.2.8.nupkg.sha512",
-        "devexpress.persistent.baseimpl.efcore.nuspec",
-        "lib/net8.0/DevExpress.Persistent.BaseImpl.EFCore.v24.2.dll",
-        "lib/net8.0/DevExpress.Persistent.BaseImpl.EFCore.v24.2.xml"
+        "devexpress.persistent.baseimpl.xpo.24.2.8.nupkg.sha512",
+        "devexpress.persistent.baseimpl.xpo.nuspec",
+        "lib/net462/DevExpress.Persistent.BaseImpl.Xpo.v24.2.dll",
+        "lib/net462/DevExpress.Persistent.BaseImpl.Xpo.v24.2.xml",
+        "lib/net8.0/DevExpress.Persistent.BaseImpl.Xpo.v24.2.dll",
+        "lib/net8.0/DevExpress.Persistent.BaseImpl.Xpo.v24.2.xml"
       ]
     },
     "DevExpress.Printing.Core/24.2.8": {
@@ -3527,6 +3076,27 @@
         "lib/net462/DevExtreme.AspNet.Data.xml",
         "lib/net8.0/DevExtreme.AspNet.Data.dll",
         "lib/net8.0/DevExtreme.AspNet.Data.xml"
+      ]
+    },
+    "FirebirdSql.Data.FirebirdClient/10.3.3": {
+      "sha512": "iAj21eY5u7obZumA3NAVZf8ynu7Z6lslkU3V4W8Mm9Mowa4gcadT2a+LIMwAovDIg8iS8RpCSzIzFdKFCdakTg==",
+      "type": "package",
+      "path": "firebirdsql.data.firebirdclient/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "firebird-logo.png",
+        "firebirdsql.data.firebirdclient.10.3.3.nupkg.sha512",
+        "firebirdsql.data.firebirdclient.nuspec",
+        "lib/net48/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net5.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net7.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net8.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll",
+        "license.txt"
       ]
     },
     "HarfBuzzSharp/7.3.0.1": {
@@ -4036,172 +3606,6 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.EntityFrameworkCore/8.0.11": {
-      "sha512": "stbjWBTtpQ1HtqXMFyKnXFTr76PvaOHI2b2h85JqBi3eZr00nspvR/a90Zwh8CQ4rVawqLiTG0+0yZQWaav+sQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.11": {
-      "sha512": "++zY0Ea724ku1jptWJmF7jm3I4IXTexfT4qi1ETcSFFF7qj+qm6rRgN7mTuKkwIETuXk0ikfzudryRjUGrrNKQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {
-      "sha512": "NI/AJQjtC7qgWM8Nr85sRkwlog2AnFer5RKP8xTUH0RuPF3nN0tGXBEeYJOLZWp+/+M/C6O7MMDRhKRE8bZwIA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
-        "docs/PACKAGE.md",
-        "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/8.0.11": {
-      "sha512": "gFFdubZlRfudSw94OxO7s8OvLQZncnR0S1ll//wRtZP3mMYVeq8DrMnEILK6hBJwbTBB1SNm3apg9SdvdE/ySg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Proxies/8.0.11": {
-      "sha512": "hiNtDy1lQUNfYCgJP6p1yEiqoTlU/JDLUqLMwLC1PsO5fC4gs/06Lz6+Pl0ikZrTelIh0t96CZ2UyyBCzj3FTg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.proxies/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.xml",
-        "microsoft.entityframeworkcore.proxies.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.proxies.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.11": {
-      "sha512": "3TuuW3i5I4Ro0yoaHmi2MqEDGObOVuhLaMEnd/heaLB1fcvm4fu4PevmC4BOWnI0vo176AIlV5o4rEQciLoohw==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.relational.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.SqlServer/8.0.11": {
-      "sha512": "rYYo8RyteIfRns+GuCcPRf3J7jS8gu8AxUWmFejrGoHTTKINhylL27N+SkFwCjxK4mscokjhQ1zjjJoNQ9oijA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.8.0.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.sqlserver.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-      "sha512": "3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
-      "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
-        "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
-        "microsoft.extensions.caching.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.Caching.Memory/8.0.1": {
-      "sha512": "HFDnhYLccngrzyGgHkjEDU5FMLn4MpOsr5ElgsBMC4yx6lJh4jeWO7fHS8+TXPq+dgxCmUa/Trl8svObmwW4QA==",
-      "type": "package",
-      "path": "microsoft.extensions.caching.memory/8.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.Caching.Memory.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.targets",
-        "lib/net462/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net462/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net6.0/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net7.0/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/net8.0/Microsoft.Extensions.Caching.Memory.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
-        "microsoft.extensions.caching.memory.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
       "sha512": "3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ==",
       "type": "package",
@@ -4382,38 +3786,6 @@
         "lib/netstandard2.1/Microsoft.Extensions.Hosting.Abstractions.xml",
         "microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
         "microsoft.extensions.hosting.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.Logging/8.0.1": {
-      "sha512": "4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
-      "type": "package",
-      "path": "microsoft.extensions.logging/8.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.Logging.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.targets",
-        "lib/net462/Microsoft.Extensions.Logging.dll",
-        "lib/net462/Microsoft.Extensions.Logging.xml",
-        "lib/net6.0/Microsoft.Extensions.Logging.dll",
-        "lib/net6.0/Microsoft.Extensions.Logging.xml",
-        "lib/net7.0/Microsoft.Extensions.Logging.dll",
-        "lib/net7.0/Microsoft.Extensions.Logging.xml",
-        "lib/net8.0/Microsoft.Extensions.Logging.dll",
-        "lib/net8.0/Microsoft.Extensions.Logging.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
-        "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
-        "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
-        "microsoft.extensions.logging.8.0.1.nupkg.sha512",
-        "microsoft.extensions.logging.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -4998,63 +4370,6 @@
         "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Remote.Linq/7.2.0": {
-      "sha512": "BVwCLZWSTXjNADaqBVgV8Pt29iLHgprFz6eP4q0y2xpx1I8WWgJmt4V6s64FVLa1Ey4ToSE7b0XnKWRlo2lyyA==",
-      "type": "package",
-      "path": "remote.linq/7.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Remote.Linq.dll",
-        "lib/net6.0/Remote.Linq.xml",
-        "lib/net8.0/Remote.Linq.dll",
-        "lib/net8.0/Remote.Linq.xml",
-        "lib/netstandard2.0/Remote.Linq.dll",
-        "lib/netstandard2.0/Remote.Linq.xml",
-        "lib/netstandard2.1/Remote.Linq.dll",
-        "lib/netstandard2.1/Remote.Linq.xml",
-        "license.txt",
-        "remote.linq.7.2.0.nupkg.sha512",
-        "remote.linq.nuspec",
-        "remotelinq-small.png"
-      ]
-    },
-    "Remote.Linq.EntityFrameworkCore/7.1.0": {
-      "sha512": "m50MtCkEZdBURDJjG7yPY8pf4n7NQANna13CX+jzE0nBh8Mfa4WHGmONaBOxIrZZ9z5PxceCbZoz/Cb3NLgiQg==",
-      "type": "package",
-      "path": "remote.linq.entityframeworkcore/7.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Remote.Linq.EntityFrameworkCore.dll",
-        "lib/net6.0/Remote.Linq.EntityFrameworkCore.xml",
-        "lib/netstandard2.0/Remote.Linq.EntityFrameworkCore.dll",
-        "lib/netstandard2.0/Remote.Linq.EntityFrameworkCore.xml",
-        "lib/netstandard2.1/Remote.Linq.EntityFrameworkCore.dll",
-        "lib/netstandard2.1/Remote.Linq.EntityFrameworkCore.xml",
-        "license.txt",
-        "remote.linq.entityframeworkcore.7.1.0.nupkg.sha512",
-        "remote.linq.entityframeworkcore.nuspec",
-        "remotelinq-small.png"
-      ]
-    },
-    "Remote.Linq.Text.Json/7.2.0": {
-      "sha512": "YPimHPrY5bkLKTl7JQw15FFQVNzB6LhIOzjefaRWnPeVm9lwYmK3LWQr7L8gVzuSpusYBn8F9crg4w+91ODQrw==",
-      "type": "package",
-      "path": "remote.linq.text.json/7.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Remote.Linq.Text.Json.dll",
-        "lib/net6.0/Remote.Linq.Text.Json.xml",
-        "lib/netstandard2.0/Remote.Linq.Text.Json.dll",
-        "lib/netstandard2.0/Remote.Linq.Text.Json.xml",
-        "license.txt",
-        "remote.linq.text.json.7.2.0.nupkg.sha512",
-        "remote.linq.text.json.nuspec",
-        "remotelinq-small.png"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -6392,33 +5707,30 @@
       "DevExpress.Drawing.Skia >= 24.2.8",
       "DevExpress.ExpressApp.Blazor >= 24.2.8",
       "DevExpress.ExpressApp.CodeAnalysis >= 24.2.8",
-      "DevExpress.ExpressApp.Validation.Blazor >= 24.2.8"
+      "FirebirdSql.Data.FirebirdClient >= 10.3.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tojab\\.nuget\\packages\\": {},
-    "D:\\XAF\\Components\\Offline Packages": {},
-    "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages": {},
+    "C:\\Users\\jakub\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tojab\\source\\repos\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+      "projectUniqueName": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
       "projectName": "DXApplication.Blazor.Server",
-      "projectPath": "C:\\Users\\tojab\\source\\repos\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
-      "packagesPath": "C:\\Users\\tojab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tojab\\source\\repos\\DXApplication\\DXApplication.Blazor.Server\\obj\\",
+      "projectPath": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\DXApplication.Blazor.Server.csproj",
+      "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
+      "outputPath": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Blazor.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\XAF\\Components\\Offline Packages",
-        "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tojab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6427,16 +5739,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 25.1\\Components\\System\\Components\\Packages": {},
-        "D:\\XAF\\Components\\System\\Components\\Packages": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/kiPv291fwnDHSSaA9szX8jxYchCOetifvZMHidkTSy8DRazHkW/api/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\tojab\\source\\repos\\DXApplication\\DXApplication.Module\\DXApplication.Module.csproj": {
-              "projectPath": "C:\\Users\\tojab\\source\\repos\\DXApplication\\DXApplication.Module\\DXApplication.Module.csproj"
+            "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\DXApplication.Module.csproj": {
+              "projectPath": "C:\\JAKUB\\GitHub\\Praktyki2025\\praktyki25\\DXApplication\\DXApplication.Module\\DXApplication.Module.csproj"
             }
           }
         }
@@ -6451,7 +5763,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -6469,9 +5781,9 @@
             "target": "Package",
             "version": "[24.2.8, )"
           },
-          "DevExpress.ExpressApp.Validation.Blazor": {
+          "FirebirdSql.Data.FirebirdClient": {
             "target": "Package",
-            "version": "[24.2.8, )"
+            "version": "[10.3.3, )"
           }
         },
         "imports": [
@@ -6485,28 +5797,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.205, 9.0.205]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6515,7 +5805,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

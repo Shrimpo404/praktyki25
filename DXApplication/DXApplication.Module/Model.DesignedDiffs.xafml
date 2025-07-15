@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" ?>
 <Application Title="DXApplication">
-  <Options>
-    <LayoutManagerOptions RequiredFieldMark="*" />
-  </Options>
   <Views>
   </Views>
 </Application>
