@@ -15,29 +15,15 @@ namespace DXApplication.Module.BusinessObjects
     {
         public Mandant(Session session) : base(session) { }
 
-        [Key, Browsable(false)]
+        [Key(true)]
         [Persistent("MANDANT_ID")]
-        public int MANDANT_ID
-        {
-            get => mandant_id;
-            set => SetPropertyValue(nameof(MANDANT_ID), ref mandant_id, value);
-        }
-        private int mandant_id;
+        [Browsable(false)]
+        public int MANDANT_ID { get; set; }
 
         [Persistent("MANDANT_KOD")]
-        public string MANDANT_KOD
-        {
-            get => mandant_kod;
-            set => SetPropertyValue(nameof(MANDANT_KOD), ref mandant_kod, value);
-        }
-        private string mandant_kod;
+        public string MANDANT_KOD { get; set; }
 
         [Persistent("MANDANT_OPIS")]
-        public string MANDANT_OPIS
-        {
-            get => mandant_opis;
-            set => SetPropertyValue(nameof(MANDANT_OPIS), ref mandant_opis, value);
-        }
-        private string mandant_opis;
+        public string MANDANT_OPIS { get; set; }
     }
 }

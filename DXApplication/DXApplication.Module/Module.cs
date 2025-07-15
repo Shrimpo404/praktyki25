@@ -24,6 +24,7 @@ public sealed class DXApplicationModule : ModuleBase {
         RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.SystemModule.SystemModule));
 
         AdditionalExportedTypes.Add(typeof(BusinessObjects.Mandant));
+        AdditionalExportedTypes.Add(typeof(BusinessObjects.Zaklady));
     }
     public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
         ModuleUpdater updater = new DatabaseUpdate.Updater(objectSpace, versionFromDB);

@@ -1,0 +1,87 @@
+# .NET / C# / Visual Studio
+
+# Visual Studio local settings
+.vs/
+
+## Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS Code
+.idea/
+.vscode/
+*.code-workspace
+
+## Logs
+*.log
+Logs/
+
+## Runtime files
+*.pidb
+*.mdb
+*.pdb
+
+## ASP.NET/Blazor-specific
+wwwroot/**/*.map
+wwwroot/node_modules/
+node_modules/
+dist/
+out/
+.publish/
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Package managers
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Firebird database files (if used in repo/test)
+*.fdb
+*.gdb
+*.ib
+
+# DevExpress auto-generated stuff
+**/Model.DesignedDiffs.xafml
+**/Model.DesignedDiffs*.xafml
+**/Model.User.xafml
+**/Model*.xafml.*
+**/ModelDiffsDesigner.cs
+**/Model.DesignedDiffs*.xafml.cs
+**/XAFMLCache/
+**/*.xafml.cache
+
+# Tests & temp
+TestResults/
+*.vspscc
+*.vssscc
+*.coverage
+*.testsettings
+*.runsettings
+*.dbmdl
+
+# Others
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# Deployment artifacts
+*.Publish.xml
+*.deploy*
+
+# Secrets/configs (optional)
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
