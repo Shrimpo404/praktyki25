@@ -1,5 +1,76 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="DXApplication">
+  <ActionDesign>
+    <Actions>
+      <Action Id="ClearFilterValues" Index="" />
+      <Action Id="ClearWalutaFilter" Index="" />
+    </Actions>
+    <Controllers>
+      <ViewController Name="AutoNumSchematFilterController">
+        <Actions>
+          <ActionLink ActionId="ClearFilterValues" Index="" />
+          <ActionLink ActionId="FilterByTyp" Index="" />
+        </Actions>
+      </ViewController>
+      <ViewController Name="WalutaFilterController">
+        <Actions>
+          <ActionLink ActionId="ClearWalutaFilter" Index="" />
+          <ActionLink ActionId="FilterWaluty" Index="" />
+        </Actions>
+      </ViewController>
+    </Controllers>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DXApplication.Module.BusinessObjects.AutoNumSchemat">
+      <OwnMembers>
+        <Member Name="AUTO_NUM_SCHEMAT_ID" AllowEdit="False" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="@42e6973d-ca23-4b43-bb65-b7c9ff2c8d89" ViewId="AutoNumSchemat_ListView" Index="0" IsNewNode="True" />
+          <Item Id="@823c1236-4e1f-4980-8816-430d28711318" ViewId="AutoNumSchemat_DashboardView" ImageName="ModelEditor_DashboardView" Caption="AutoNumSchemat_DashboardView" IsNewNode="True" />
+          <Item Id="AutoNumSchemat_ListView" Caption="Auto Num Schemat Search Object" ViewId="AutoNumSchematSearchObject_ListView" Removed="True" />
+          <Item Id="Waluta_ListView" Caption="WALUTY" ViewId="Waluta_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.2.8.0" IsNewNode="True" />
+  </SchemaModules>
   <Views>
+    <DetailView Id="AutoNumSchemat_DetailView" AllowEdit="True">
+      <Items>
+        <PropertyEditor Id="TYP" AllowEdit="True" />
+      </Items>
+    </DetailView>
+    <ListView Id="AutoNumSchemat_ListView" Caption="SCHEMATY AUTONUMERACJI" AllowEdit="False" Criteria="[AUTO_NUM_SCHEMAT_ID] &lt;&gt; 0" />
+    <DetailView Id="AutoNumSchematFilter_DetailView" Caption="Warunki wyszukiwania">
+      <Items>
+        <PropertyEditor Id="SelectedTyp" AllowEdit="True" />
+      </Items>
+    </DetailView>
+    <ListView Id="AutoNumSchematFilter_ListView" AllowEdit="True" />
+    <DetailView Id="TypItem_DetailView" AllowEdit="True" />
+    <ListView Id="TypItem_ListView" AllowEdit="True" />
+    <ListView Id="TypItem_LookupListView" AllowNew="False" />
+    <DetailView Id="Waluta_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Waluta">
+              <LayoutItem Id="WALUTA_KOD" Index="1" />
+              <LayoutItem Id="WALUTA_OPIS" Index="2" />
+              <LayoutItem Id="KURS" Index="3" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Waluta_ListView" ShowFindPanel="False" Criteria="[WALUTA_ID] &lt;&gt; 0" />
   </Views>
 </Application>
