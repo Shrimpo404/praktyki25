@@ -1,11 +1,11 @@
 # .NET / C# / Visual Studio
 
-# Visual Studio local settings
+## Visual Studio local settings
 .vs/
 
 ## Build results
-bin/
-obj/
+[Bb]in/
+[Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 
@@ -22,7 +22,7 @@ obj/
 
 ## Logs
 *.log
-Logs/
+[Ll]ogs/
 
 ## Runtime files
 *.pidb
@@ -53,15 +53,13 @@ packages/
 *.gdb
 *.ib
 
-# DevExpress auto-generated stuff
-**/Model.DesignedDiffs.xafml
-**/Model.DesignedDiffs*.xafml
 **/Model.User.xafml
-**/Model*.xafml.*
+**/Model*.xafml.cs
 **/ModelDiffsDesigner.cs
-**/Model.DesignedDiffs*.xafml.cs
 **/XAFMLCache/
 **/*.xafml.cache
+
+**/UnusableNodes*.xml
 
 # Tests & temp
 TestResults/
