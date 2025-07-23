@@ -1,26 +1,29 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
-using System;
 using System.ComponentModel;
 
 namespace DXApplication.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [Persistent("WYDRUKI")]
+    [Persistent("SYS_DOK_ZAS")]
+    [DefaultProperty("SYS_DOK_ZAS")]
     public class Wydruki : XPLiteObject
     {
         public Wydruki(Session session) : base(session) { }
 
         [Key(true)]
-        [Persistent("KATEGORIA")]
+        [Persistent("SYS_DOK_ZAS_ID")]
         [Browsable(false)]
+        public int WydrukID { get; set; }
+
+        [Persistent("RAPORT_KATEGORIA")]
         public int Kategoria { get; set; }
 
-        [Persistent("WYDRUK_KOD")]
-        public int WydrukKod { get; set; }
+        [Persistent("SYS_DOK_ZAS_KOD")]
+        public string WydrukiKod { get; set; }
 
-        [Persistent("WYDRUK_OPIS")]
-        public string WydrukOpis { get; set; }
+        [Persistent("SYS_DOK_KOD_OPIS")]
+        public string WydrukiOpis { get; set; }
 
         [Persistent("RAPORT")]
         public string Raport { get; set; }
@@ -31,17 +34,18 @@ namespace DXApplication.Module.BusinessObjects
         [Persistent("ARCHIWIZUJ")]
         public short Archiwizuj { get; set; }
 
-        [Persistent("UTWORZONY_PRZEZ")]
+        [Persistent("INSERTED_BY")]
         public string UtworzonyPrzez { get; set; }
 
-        [Persistent("DATA_DODANIA")]
+        [Persistent("INS_DATE")]
         public DateTime DataDodania { get; set; }
 
-        [Persistent("EDYTOWANY_PRZEZ")]
-        public String EdytowanyPrzez { get; set; }
+        [Persistent("EDITING")]
+        public string EdytowanyPrzez { get; set; }
 
-        [Persistent("DATA_EDYCJI")]
+        [Persistent("EDI_DATE")]
         public DateTime DataEdycji { get; set; }
+
 
     }
 }

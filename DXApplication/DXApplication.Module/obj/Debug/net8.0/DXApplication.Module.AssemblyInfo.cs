@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DXApplication.Module")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3282308e53f65469d261a35439e05c2d233d347")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d4352acd6ce4db804cb9d012ed113affe253a75")]
 [assembly: System.Reflection.AssemblyProductAttribute("DXApplication.Module")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DXApplication.Module")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]
