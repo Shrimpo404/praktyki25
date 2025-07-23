@@ -1,3 +1,6 @@
+[- IBexpert DB config](https://docs.google.com/document/d/1kliNbIf7w3zb7i7k2WEzQZlFdKVpZSAE1mG5kL5cnH8/edit?tab=t.0)
+
+
 | **Słownik**                        | **Robi**          |
 |----------------------------------|----------------------------|
 | ZADKŁADY                         | Anton Yanchuk              |
