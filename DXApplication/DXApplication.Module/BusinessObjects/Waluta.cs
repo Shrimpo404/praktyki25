@@ -16,16 +16,20 @@ namespace DXApplication.Module.BusinessObjects
         [Browsable(false)]
         public int WALUTA_ID { get; set; }
 
-        [Persistent("WALUTA_KOD")] 
+        [Persistent("WALUTA_KOD")]
+        [DevExpress.Xpo.DisplayName("Waluta Kod")]
         public string WALUTA_KOD { get; set; }
 
         [Persistent("WALUTA_OPIS")]
+        [DevExpress.Xpo.DisplayName("Waluta Opis")]
         public string WALUTA_OPIS { get; set; }
 
+        [Persistent("KURS")]
+        [DevExpress.Xpo.DisplayName("Kurs budżetu")]
+        public string KURS { get; set; }
+
         [Association("Waluta-KursyWalut")]
-        public XPCollection<SloKursyWaluty> KursyWalut
-        {
-            get { return GetCollection<SloKursyWaluty>(nameof(KursyWalut)); }
-        }
+        public XPCollection<SloKursyWaluty> KursyWalut =>
+            GetCollection<SloKursyWaluty>(nameof(KursyWalut));
     }
 }

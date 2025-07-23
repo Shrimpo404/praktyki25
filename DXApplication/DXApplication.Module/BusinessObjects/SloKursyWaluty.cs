@@ -1,7 +1,8 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
-using System;
 using System.ComponentModel;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Model; 
 
 namespace DXApplication.Module.BusinessObjects
 {
@@ -16,24 +17,33 @@ namespace DXApplication.Module.BusinessObjects
         [Browsable(false)]
         public int SLO_KURSY_WALUTY_ID { get; set; }
 
+        [NonPersistent]
+        [DevExpress.Xpo.DisplayName("Kod waluty")]
+        [VisibleInListView(true)] 
+        [VisibleInLookupListView(true)]
+        public string WalutaKod => Waluta?.WALUTA_KOD;
+
+   
+        [Association("Waluta-KursyWalut")]
+        [Persistent("WALUTA_ID")]
+        [VisibleInListView(false)] 
+        [VisibleInLookupListView(false)]
+        public Waluta Waluta { get; set; }
+
         [Persistent("KURS_Z_DNIA")]
+        [DevExpress.Xpo.DisplayName("Data kursu")]
         public DateTime KursZDnia { get; set; }
 
         [Persistent("NUMER_TABELI")]
         public string NumerTabeli { get; set; }
 
         [Persistent("KURS")]
-        public decimal Kurs { get; set; }
+        public string Kurs { get; set; }
 
         [Persistent("DATA_OD")]
         public DateTime WazneOd { get; set; }
 
         [Persistent("DATA_DO")]
         public DateTime WazneDo { get; set; }
-
-        [Association("Waluta-KursyWalut")]
-        [Persistent("WALUTA_ID")] 
-        public Waluta Waluta { get; set; }
-
     }
 }
