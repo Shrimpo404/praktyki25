@@ -18,7 +18,7 @@ namespace DXApplication.Module.BusinessObjects
         public int SLO_KURSY_WALUTY_ID { get; set; }
 
         [NonPersistent]
-        [DevExpress.Xpo.DisplayName("Kod waluty")]
+        [DevExpress.Xpo.DisplayName("Kod")]
         [VisibleInListView(true)] 
         [VisibleInLookupListView(true)]
         public string WalutaKod => Waluta?.WALUTA_KOD;
@@ -31,7 +31,7 @@ namespace DXApplication.Module.BusinessObjects
         public Waluta Waluta { get; set; }
 
         [Persistent("KURS_Z_DNIA")]
-        [DevExpress.Xpo.DisplayName("Data kursu")]
+        [DevExpress.Xpo.DisplayName("Kurs z dnia")]
         public DateTime KursZDnia { get; set; }
 
         [Persistent("NUMER_TABELI")]
