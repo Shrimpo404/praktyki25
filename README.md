@@ -1,22 +1,13 @@
-# Read issues!
+# 10. Słownik WALUTY
+<img width="658" height="328" alt="image" src="https://github.com/user-attachments/assets/d71c5df9-1136-4944-a755-300041f0f33d" />
+<img width="990" height="417" alt="image" src="https://github.com/user-attachments/assets/7b406b12-cf32-4d69-a970-f5fa14b8ad0f" />
 
-[- IBexpert DB config](https://docs.google.com/document/d/1kliNbIf7w3zb7i7k2WEzQZlFdKVpZSAE1mG5kL5cnH8/edit?tab=t.0)
+# 11. Słownik KURSY WALUT
+<img width="660" height="610" alt="image" src="https://github.com/user-attachments/assets/55d5e17c-ab17-4d0a-a35d-5080ca57f93a" />
+<img width="990" height="323" alt="image" src="https://github.com/user-attachments/assets/66670337-f58e-4e21-a2b4-a79f9bb81207" />
+
+# 14. Słownik TAGI
+<img width="665" height="583" alt="image" src="https://github.com/user-attachments/assets/98054a81-dd8c-4ec4-8c7c-4e7076aeea50" />
+<img width="988" height="277" alt="image" src="https://github.com/user-attachments/assets/90143d64-851e-405e-aa3e-75b7f05e40dd" />
 
 
-| **Słownik**                        | **Robi**          |
-|----------------------------------|----------------------------|
-| ZADKŁADY                         | Anton Yanchuk              |
-| WYDZIALY                         | Anton Yanchuk              |
-| SCHEMATY AUTONUMERACJI          | Jakub Krupicki             |
-| LISTA SCHEMATÓW AUTOKODOWANIA   | Bartłomiej Ślesiński       |
-| TYPY ZAMÓWIEŃ                    | Jakub Syperek              |
-| MANDANT                          | Jakub Syperek              |
-| PLAN PRACY                       | Filip Maksymiuk            |
-| JEDNOSTKI                        | Filip Maksymiuk            |
-| KODY TRANSAKCJI                  | Bartosz Kowalski           |
-| WALUTY                           | Jakub Krupicki             |
-| KURSY WALUT                      | Mikita Vydrankou           |
-| VAT                              | Tomasz Szafrański          |
-| JĘZYKI                           | Bartosz Kowalski           |
-| TAGI                             | Mikita Vydrankou           |
-| WYDRUKI                          | Bartłomiej Ślesiński       |
