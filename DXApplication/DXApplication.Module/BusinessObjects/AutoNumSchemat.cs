@@ -102,6 +102,7 @@ namespace DXApplication.Module.BusinessObjects
         [ModelDefault("DisplayFormat", "dd.MM.yyyy HH:mm")]
         [ModelDefault("EditMask", "dd.MM.yyyy HH:mm")]
         [XafDisplayName("Edi date")]
+        [Browsable(false)]
         public DateTime EDI_DATE
         {
             get => ediDate;
@@ -112,6 +113,7 @@ namespace DXApplication.Module.BusinessObjects
         [Persistent("EDITING")]
         [Size(50)]
         [XafDisplayName("Editing")]
+        [Browsable(false)]
         public string EDITING
         {
             get => editing;
