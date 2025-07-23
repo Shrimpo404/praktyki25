@@ -17,12 +17,16 @@ namespace DXApplication.Module.BusinessObjects
         public int TAGI_ID { get; set; }
 
         [Persistent("TAGI_KOD")]
+        [DevExpress.Xpo.DisplayName("Tagi kod")] 
+
         public string TAGI_KOD { get; set; }
 
         [Persistent("TAGI_OPIS")]
+        [DevExpress.Xpo.DisplayName("Tagi opis")]
         public string TAGI_OPIS { get; set; }
 
         [Persistent("KOLEJNOSC")]
+        [DevExpress.Xpo.DisplayName("Kolejność")]
         public string KOLEJNOSC { get; set; }
     }
 }
