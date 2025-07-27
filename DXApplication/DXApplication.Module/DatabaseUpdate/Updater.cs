@@ -6,6 +6,7 @@ using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
 using Microsoft.Extensions.DependencyInjection;
+using DXApplication.Module.BusinessObjects;
 
 namespace DXApplication.Module.DatabaseUpdate;
 
@@ -14,8 +15,8 @@ public class Updater : ModuleUpdater {
     public Updater(IObjectSpace objectSpace, Version currentDBVersion) :
         base(objectSpace, currentDBVersion) {
     }
-    public override void UpdateDatabaseAfterUpdateSchema() {
-        base.UpdateDatabaseAfterUpdateSchema();
+    
+        // Uncomment this line to persist created objects.
         //string name = "MyName";
         //DomainObject1 theObject = ObjectSpace.FirstOrDefault<DomainObject1>(u => u.Name == name);
         //if(theObject == null) {
@@ -24,7 +25,7 @@ public class Updater : ModuleUpdater {
         //}
 
         //ObjectSpace.CommitChanges(); //Uncomment this line to persist created object(s).
-    }
+    
     public override void UpdateDatabaseBeforeUpdateSchema() {
         base.UpdateDatabaseBeforeUpdateSchema();
         //if(CurrentDBVersion < new Version("1.1.0.0") && CurrentDBVersion > new Version("0.0.0.0")) {

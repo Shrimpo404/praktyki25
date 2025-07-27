@@ -1,11 +1,7 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DXApplication.Module.BusinessObjects
 {
@@ -18,12 +14,13 @@ namespace DXApplication.Module.BusinessObjects
         [Key(true)]
         [Persistent("MANDANT_ID")]
         [Browsable(false)]
-        public int MANDANT_ID { get; set; }
+        public int MandantId { get; set; }
 
         [Persistent("MANDANT_KOD")]
-        public string MANDANT_KOD { get; set; }
+        public string Kod { get; set; }
 
         [Persistent("MANDANT_OPIS")]
-        public string MANDANT_OPIS { get; set; }
+        public string Opis { get; set; }
+
     }
 }
